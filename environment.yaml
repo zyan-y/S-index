@@ -3,13 +3,12 @@ channels:
   - defaults
 dependencies:
   - python=3.8.12
-  - numpy=1.21.0
+  - numpy=1.21.5
   - pandas=1.4.2
+  - openpyxl=3.1.0
   - scikit-learn=1.0.2
   - matplotlib=3.5.1
   - seaborn=0.11.2
-  - shap=0.40.0
-  - xgboost=1.6.1
   - jupyter=1.0.0
   - jupyter_client=6.1.12
   - jupyter_console=6.4.0
@@ -23,3 +22,5 @@ dependencies:
     - biopython==1.79
     - multiprocess==0.70.13
     - primer3-py==0.6.1
+    - shap==0.40.0
+    - xgboost==1.6.1
