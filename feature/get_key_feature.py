@@ -30,13 +30,13 @@ def get_fe(seq):
 
 def get_max_GC(seq, length):
     subs = [ seq[i:i + length] for i in range(0, len(seq), length)]
-    subs = subs[:-1] if len(subs[:-1]) != length else subs
+    subs = subs[:-1]
     value_list = [ get_gc(x) for x in subs]
     return np.max(value_list)
 
 def get_min_IE(seq, length):
     subs = [ seq[i:i + length] for i in range(0, len(seq), length)]
-    subs = subs[:-1] if len(subs[:-1]) != length else subs
+    subs = subs[:-1]
     value_list = [ get_ie(x) for x in subs]
     return np.min(value_list)
 
